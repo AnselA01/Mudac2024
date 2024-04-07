@@ -1,0 +1,232 @@
+<metadata xml:lang="en">
+	<Esri>
+		<CreaDate>20151103</CreaDate>
+		<CreaTime>15033200</CreaTime>
+		<ArcGISFormat>1.0</ArcGISFormat>
+		<SyncOnce>FALSE</SyncOnce>
+		<DataProperties>
+			<itemProps>
+				<itemName Sync="TRUE">ethanol_plants</itemName>
+				<imsContentType Sync="TRUE">002</imsContentType>
+				<itemLocation>
+					<linkage Sync="TRUE">file://\\g46palgdrftp001\Z\var\ftp\gdrs_temp\update\us_mn_state_mda\util_ethanol_plant_locations\shp\ethanol_plants.shp</linkage>
+					<protocol Sync="TRUE">Local Area Network</protocol>
+				</itemLocation>
+				<itemSize Sync="TRUE">0.000</itemSize>
+			</itemProps>
+			<coordRef>
+				<type Sync="TRUE">Projected</type>
+				<geogcsn Sync="TRUE">GCS_North_American_1983</geogcsn>
+				<projcsn Sync="TRUE">NAD_1983_UTM_Zone_15N</projcsn>
+				<peXml Sync="TRUE">&lt;ProjectedCoordinateSystem xsi:type='typens:ProjectedCoordinateSystem' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:typens='http://www.esri.com/schemas/ArcGIS/10.4'&gt;&lt;WKT&gt;PROJCS[&amp;quot;NAD_1983_UTM_Zone_15N&amp;quot;,GEOGCS[&amp;quot;GCS_North_American_1983&amp;quot;,DATUM[&amp;quot;D_North_American_1983&amp;quot;,SPHEROID[&amp;quot;GRS_1980&amp;quot;,6378137.0,298.257222101]],PRIMEM[&amp;quot;Greenwich&amp;quot;,0.0],UNIT[&amp;quot;Degree&amp;quot;,0.0174532925199433]],PROJECTION[&amp;quot;Transverse_Mercator&amp;quot;],PARAMETER[&amp;quot;False_Easting&amp;quot;,500000.0],PARAMETER[&amp;quot;False_Northing&amp;quot;,0.0],PARAMETER[&amp;quot;Central_Meridian&amp;quot;,-93.0],PARAMETER[&amp;quot;Scale_Factor&amp;quot;,0.9996],PARAMETER[&amp;quot;Latitude_Of_Origin&amp;quot;,0.0],UNIT[&amp;quot;Meter&amp;quot;,1.0],AUTHORITY[&amp;quot;EPSG&amp;quot;,26915]]&lt;/WKT&gt;&lt;XOrigin&gt;-5120900&lt;/XOrigin&gt;&lt;YOrigin&gt;-9998100&lt;/YOrigin&gt;&lt;XYScale&gt;450445547.3910538&lt;/XYScale&gt;&lt;ZOrigin&gt;-100000&lt;/ZOrigin&gt;&lt;ZScale&gt;10000&lt;/ZScale&gt;&lt;MOrigin&gt;-100000&lt;/MOrigin&gt;&lt;MScale&gt;10000&lt;/MScale&gt;&lt;XYTolerance&gt;0.001&lt;/XYTolerance&gt;&lt;ZTolerance&gt;0.001&lt;/ZTolerance&gt;&lt;MTolerance&gt;0.001&lt;/MTolerance&gt;&lt;HighPrecision&gt;true&lt;/HighPrecision&gt;&lt;WKID&gt;26915&lt;/WKID&gt;&lt;LatestWKID&gt;26915&lt;/LatestWKID&gt;&lt;/ProjectedCoordinateSystem&gt;</peXml>
+				<csUnits Sync="TRUE">Linear Unit: Meter (1.000000)</csUnits>
+			</coordRef>
+			<lineage>
+				<Process ToolSource="C:\Program Files (x86)\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Conversion Tools.tbx\FeatureClassToFeatureClass" Date="20110513" Time="144239">FeatureClassToFeatureClass V:\gdrs\data\pub\us_mn_state_mda\util_ethanol_plant_locations\util_ethpt3.shp V:\gdrs\data\pub\us_mn_state_mda\util_ethanol_plant_locations\util_ethanol_plant_locations.gdb ethanol_plants # "ID "ID" true true false 2 Short 0 2 ,First,#,V:\gdrs\data\pub\us_mn_state_mda\util_ethanol_plant_locations\util_ethpt3.shp,ID,-1,-1;PLANTNAME "PLANTNAME" true true false 128 Text 0 0 ,First,#,V:\gdrs\data\pub\us_mn_state_mda\util_ethanol_plant_locations\util_ethpt3.shp,PLANTNAME,-1,-1;STREET "STREET" true true false 64 Text 0 0 ,First,#,V:\gdrs\data\pub\us_mn_state_mda\util_ethanol_plant_locations\util_ethpt3.shp,STREET,-1,-1;CITY "CITY" true true false 64 Text 0 0 ,First,#,V:\gdrs\data\pub\us_mn_state_mda\util_ethanol_plant_locations\util_ethpt3.shp,CITY,-1,-1;STATE "STATE" true true false 2 Text 0 0 ,First,#,V:\gdrs\data\pub\us_mn_state_mda\util_ethanol_plant_locations\util_ethpt3.shp,STATE,-1,-1;ZIP "ZIP" true true false 10 Double 0 10 ,First,#,V:\gdrs\data\pub\us_mn_state_mda\util_ethanol_plant_locations\util_ethpt3.shp,ZIP,-1,-1;MGAL_YR "MGAL_YR" true true false 10 Double 0 10 ,First,#,V:\gdrs\data\pub\us_mn_state_mda\util_ethanol_plant_locations\util_ethpt3.shp,MGAL_YR,-1,-1;CONFIDENCE "CONFIDENCE" true true false 1 Short 0 1 ,First,#,V:\gdrs\data\pub\us_mn_state_mda\util_ethanol_plant_locations\util_ethpt3.shp,CONFIDENCE,-1,-1" #</Process>
+				<Process ToolSource="/home/drsadmin/esri/arcgis/engine10.0/ArcToolbox/Toolboxes/Data Management Tools.tbx/DeleteFeatures" Date="20110616" Time="132428">DeleteFeatures /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethanol_plant_locations.gdb/ethanol_plants</Process>
+				<Process ToolSource="/home/drsadmin/esri/arcgis/engine10.0/ArcToolbox/Toolboxes/Data Management Tools.tbx/Append" Date="20110616" Time="132429">Append /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethanol_plant_locations.gdb/ethanol_plants NO_TEST "ID "ID" true true false 2 Short 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,ID,-1,-1;PLANTNAME "PLANTNAME" true true false 128 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,PLANTNAME,-1,-1;STREET "STREET" true true false 64 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,STREET,-1,-1;CITY "CITY" true true false 64 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,CITY,-1,-1;STATE "STATE" true true false 2 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,STATE,-1,-1;ZIP "ZIP" true true false 8 Double 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,ZIP,-1,-1;MGAL_YR "MGAL_YR" true true false 8 Double 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,MGAL_YR,-1,-1;CONFIDENCE "CONFIDENCE" true true false 2 Short 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,CONFIDENCE,-1,-1" #</Process>
+				<Process ToolSource="/home/drsadmin/esri/arcgis/engine10.0/ArcToolbox/Toolboxes/Data Management Tools.tbx/DeleteFeatures" Date="20110630" Time="152708">DeleteFeatures /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethanol_plant_locations.gdb/ethanol_plants</Process>
+				<Process ToolSource="/home/drsadmin/esri/arcgis/engine10.0/ArcToolbox/Toolboxes/Data Management Tools.tbx/Append" Date="20110630" Time="152709">Append /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethanol_plant_locations.gdb/ethanol_plants NO_TEST "ID "ID" true true false 2 Short 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,ID,-1,-1;PLANTNAME "PLANTNAME" true true false 128 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,PLANTNAME,-1,-1;STREET "STREET" true true false 64 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,STREET,-1,-1;CITY "CITY" true true false 64 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,CITY,-1,-1;STATE "STATE" true true false 2 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,STATE,-1,-1;ZIP "ZIP" true true false 8 Double 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,ZIP,-1,-1;MGAL_YR "MGAL_YR" true true false 8 Double 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,MGAL_YR,-1,-1;CONFIDENCE "CONFIDENCE" true true false 2 Short 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,CONFIDENCE,-1,-1" #</Process>
+				<Process ToolSource="/home/drsadmin/esri/arcgis/engine10.0/ArcToolbox/Toolboxes/Data Management Tools.tbx/DeleteFeatures" Date="20110722" Time="092522">DeleteFeatures /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethanol_plant_locations.gdb/ethanol_plants</Process>
+				<Process ToolSource="/home/drsadmin/esri/arcgis/engine10.0/ArcToolbox/Toolboxes/Data Management Tools.tbx/Append" Date="20110722" Time="092523">Append /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethanol_plant_locations.gdb/ethanol_plants NO_TEST "ID "ID" true true false 2 Short 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,ID,-1,-1;PLANTNAME "PLANTNAME" true true false 128 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,PLANTNAME,-1,-1;STREET "STREET" true true false 64 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,STREET,-1,-1;CITY "CITY" true true false 64 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,CITY,-1,-1;STATE "STATE" true true false 2 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,STATE,-1,-1;ZIP "ZIP" true true false 8 Double 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,ZIP,-1,-1;MGAL_YR "MGAL_YR" true true false 8 Double 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,MGAL_YR,-1,-1;CONFIDENCE "CONFIDENCE" true true false 2 Short 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,CONFIDENCE,-1,-1" #</Process>
+				<Process ToolSource="/home/drsadmin/esri/arcgis/engine10.0/ArcToolbox/Toolboxes/Data Management Tools.tbx/DeleteFeatures" Date="20110722" Time="111244">DeleteFeatures /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethanol_plant_locations.gdb/ethanol_plants</Process>
+				<Process ToolSource="/home/drsadmin/esri/arcgis/engine10.0/ArcToolbox/Toolboxes/Data Management Tools.tbx/Append" Date="20110722" Time="111244">Append /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethanol_plant_locations.gdb/ethanol_plants NO_TEST "ID "ID" true true false 2 Short 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,ID,-1,-1;PLANTNAME "PLANTNAME" true true false 128 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,PLANTNAME,-1,-1;STREET "STREET" true true false 64 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,STREET,-1,-1;CITY "CITY" true true false 64 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,CITY,-1,-1;STATE "STATE" true true false 2 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,STATE,-1,-1;ZIP "ZIP" true true false 8 Double 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,ZIP,-1,-1;MGAL_YR "MGAL_YR" true true false 8 Double 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,MGAL_YR,-1,-1;CONFIDENCE "CONFIDENCE" true true false 2 Short 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,CONFIDENCE,-1,-1" #</Process>
+				<Process ToolSource="/home/drsadmin/esri/arcgis/engine10.0/ArcToolbox/Toolboxes/Data Management Tools.tbx/DeleteFeatures" Date="20110804" Time="012523">DeleteFeatures /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethanol_plant_locations.gdb/ethanol_plants</Process>
+				<Process ToolSource="/home/drsadmin/esri/arcgis/engine10.0/ArcToolbox/Toolboxes/Data Management Tools.tbx/Append" Date="20110804" Time="012524">Append /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethanol_plant_locations.gdb/ethanol_plants NO_TEST "ID "ID" true true false 2 Short 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,ID,-1,-1;PLANTNAME "PLANTNAME" true true false 128 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,PLANTNAME,-1,-1;STREET "STREET" true true false 64 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,STREET,-1,-1;CITY "CITY" true true false 64 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,CITY,-1,-1;STATE "STATE" true true false 2 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,STATE,-1,-1;ZIP "ZIP" true true false 8 Double 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,ZIP,-1,-1;MGAL_YR "MGAL_YR" true true false 8 Double 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,MGAL_YR,-1,-1;CONFIDENCE "CONFIDENCE" true true false 2 Short 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,CONFIDENCE,-1,-1" #</Process>
+				<Process ToolSource="/home/drsadmin/esri/arcgis/engine10.0/ArcToolbox/Toolboxes/Data Management Tools.tbx/DeleteFeatures" Date="20110811" Time="012521">DeleteFeatures /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethanol_plant_locations.gdb/ethanol_plants</Process>
+				<Process ToolSource="/home/drsadmin/esri/arcgis/engine10.0/ArcToolbox/Toolboxes/Data Management Tools.tbx/Append" Date="20110811" Time="012522">Append /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethanol_plant_locations.gdb/ethanol_plants NO_TEST "ID "ID" true true false 2 Short 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,ID,-1,-1;PLANTNAME "PLANTNAME" true true false 128 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,PLANTNAME,-1,-1;STREET "STREET" true true false 64 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,STREET,-1,-1;CITY "CITY" true true false 64 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,CITY,-1,-1;STATE "STATE" true true false 2 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,STATE,-1,-1;ZIP "ZIP" true true false 8 Double 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,ZIP,-1,-1;MGAL_YR "MGAL_YR" true true false 8 Double 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,MGAL_YR,-1,-1;CONFIDENCE "CONFIDENCE" true true false 2 Short 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,CONFIDENCE,-1,-1" #</Process>
+				<Process ToolSource="/home/drsadmin/esri/arcgis/engine10.0/ArcToolbox/Toolboxes/Data Management Tools.tbx/DeleteFeatures" Date="20110818" Time="012521">DeleteFeatures /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethanol_plant_locations.gdb/ethanol_plants</Process>
+				<Process ToolSource="/home/drsadmin/esri/arcgis/engine10.0/ArcToolbox/Toolboxes/Data Management Tools.tbx/Append" Date="20110818" Time="012522">Append /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethanol_plant_locations.gdb/ethanol_plants NO_TEST "ID "ID" true true false 2 Short 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,ID,-1,-1;PLANTNAME "PLANTNAME" true true false 128 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,PLANTNAME,-1,-1;STREET "STREET" true true false 64 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,STREET,-1,-1;CITY "CITY" true true false 64 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,CITY,-1,-1;STATE "STATE" true true false 2 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,STATE,-1,-1;ZIP "ZIP" true true false 8 Double 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,ZIP,-1,-1;MGAL_YR "MGAL_YR" true true false 8 Double 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,MGAL_YR,-1,-1;CONFIDENCE "CONFIDENCE" true true false 2 Short 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,CONFIDENCE,-1,-1" #</Process>
+				<Process ToolSource="/home/drsadmin/esri/arcgis/engine10.0/ArcToolbox/Toolboxes/Data Management Tools.tbx/DeleteFeatures" Date="20110822" Time="094332">DeleteFeatures /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethanol_plant_locations.gdb/ethanol_plants</Process>
+				<Process ToolSource="/home/drsadmin/esri/arcgis/engine10.0/ArcToolbox/Toolboxes/Data Management Tools.tbx/Append" Date="20110822" Time="094333">Append /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethanol_plant_locations.gdb/ethanol_plants NO_TEST "ID "ID" true true false 2 Short 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,ID,-1,-1;PLANTNAME "PLANTNAME" true true false 128 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,PLANTNAME,-1,-1;STREET "STREET" true true false 64 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,STREET,-1,-1;CITY "CITY" true true false 64 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,CITY,-1,-1;STATE "STATE" true true false 2 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,STATE,-1,-1;ZIP "ZIP" true true false 8 Double 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,ZIP,-1,-1;MGAL_YR "MGAL_YR" true true false 8 Double 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,MGAL_YR,-1,-1;CONFIDENCE "CONFIDENCE" true true false 2 Short 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,CONFIDENCE,-1,-1" #</Process>
+				<Process ToolSource="/home/drsadmin/esri/arcgis/engine10.0/ArcToolbox/Toolboxes/Data Management Tools.tbx/DeleteFeatures" Date="20110822" Time="095155">DeleteFeatures /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethanol_plant_locations.gdb/ethanol_plants</Process>
+				<Process ToolSource="/home/drsadmin/esri/arcgis/engine10.0/ArcToolbox/Toolboxes/Data Management Tools.tbx/Append" Date="20110822" Time="095156">Append /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethanol_plant_locations.gdb/ethanol_plants NO_TEST "ID "ID" true true false 2 Short 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,ID,-1,-1;PLANTNAME "PLANTNAME" true true false 128 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,PLANTNAME,-1,-1;STREET "STREET" true true false 64 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,STREET,-1,-1;CITY "CITY" true true false 64 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,CITY,-1,-1;STATE "STATE" true true false 2 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,STATE,-1,-1;ZIP "ZIP" true true false 8 Double 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,ZIP,-1,-1;MGAL_YR "MGAL_YR" true true false 8 Double 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,MGAL_YR,-1,-1;CONFIDENCE "CONFIDENCE" true true false 2 Short 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,CONFIDENCE,-1,-1" #</Process>
+				<Process ToolSource="/home/drsadmin/esri/arcgis/engine10.0/ArcToolbox/Toolboxes/Data Management Tools.tbx/DeleteFeatures" Date="20110822" Time="095310">DeleteFeatures /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethanol_plant_locations.gdb/ethanol_plants</Process>
+				<Process ToolSource="/home/drsadmin/esri/arcgis/engine10.0/ArcToolbox/Toolboxes/Data Management Tools.tbx/Append" Date="20110822" Time="095311">Append /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethanol_plant_locations.gdb/ethanol_plants NO_TEST "ID "ID" true true false 2 Short 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,ID,-1,-1;PLANTNAME "PLANTNAME" true true false 128 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,PLANTNAME,-1,-1;STREET "STREET" true true false 64 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,STREET,-1,-1;CITY "CITY" true true false 64 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,CITY,-1,-1;STATE "STATE" true true false 2 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,STATE,-1,-1;ZIP "ZIP" true true false 8 Double 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,ZIP,-1,-1;MGAL_YR "MGAL_YR" true true false 8 Double 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,MGAL_YR,-1,-1;CONFIDENCE "CONFIDENCE" true true false 2 Short 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,CONFIDENCE,-1,-1" #</Process>
+				<Process ToolSource="/home/drsadmin/esri/arcgis/engine10.0/ArcToolbox/Toolboxes/Data Management Tools.tbx/DeleteFeatures" Date="20110822" Time="095420">DeleteFeatures /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethanol_plant_locations.gdb/ethanol_plants</Process>
+				<Process ToolSource="/home/drsadmin/esri/arcgis/engine10.0/ArcToolbox/Toolboxes/Data Management Tools.tbx/Append" Date="20110822" Time="095421">Append /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethanol_plant_locations.gdb/ethanol_plants NO_TEST "ID "ID" true true false 2 Short 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,ID,-1,-1;PLANTNAME "PLANTNAME" true true false 128 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,PLANTNAME,-1,-1;STREET "STREET" true true false 64 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,STREET,-1,-1;CITY "CITY" true true false 64 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,CITY,-1,-1;STATE "STATE" true true false 2 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,STATE,-1,-1;ZIP "ZIP" true true false 8 Double 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,ZIP,-1,-1;MGAL_YR "MGAL_YR" true true false 8 Double 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,MGAL_YR,-1,-1;CONFIDENCE "CONFIDENCE" true true false 2 Short 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,CONFIDENCE,-1,-1" #</Process>
+				<Process ToolSource="/home/drsadmin/esri/arcgis/engine10.0/ArcToolbox/Toolboxes/Data Management Tools.tbx/DeleteFeatures" Date="20110822" Time="100820">DeleteFeatures /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethanol_plant_locations.gdb/ethanol_plants</Process>
+				<Process ToolSource="/home/drsadmin/esri/arcgis/engine10.0/ArcToolbox/Toolboxes/Data Management Tools.tbx/Append" Date="20110822" Time="100821">Append /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp /r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethanol_plant_locations.gdb/ethanol_plants NO_TEST "ID "ID" true true false 2 Short 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,ID,-1,-1;PLANTNAME "PLANTNAME" true true false 128 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,PLANTNAME,-1,-1;STREET "STREET" true true false 64 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,STREET,-1,-1;CITY "CITY" true true false 64 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,CITY,-1,-1;STATE "STATE" true true false 2 Text 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,STATE,-1,-1;ZIP "ZIP" true true false 8 Double 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,ZIP,-1,-1;MGAL_YR "MGAL_YR" true true false 8 Double 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,MGAL_YR,-1,-1;CONFIDENCE "CONFIDENCE" true true false 2 Short 0 0 ,First,#,/r02/data/scratch/drsadmin/drivers/util_ethanol_plant_locations/util_ethpt3.shp,CONFIDENCE,-1,-1" #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.4\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20190829" Time="152207">CalculateField "Ethanol Plants" MGAL_YR 40 VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.4\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20190829" Time="152250">CalculateField "Ethanol Plants" MGAL_YR 120 VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.4\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20190829" Time="152317">CalculateField "Ethanol Plants" MGAL_YR 39.5
+ VB #</Process>
+				<Process ToolSource="C:\program files\arcgis\server\ArcToolbox\Toolboxes\Conversion Tools.tbx\FeatureClassToFeatureClass" Date="20230110" Time="234247">FeatureClassToFeatureClass /var/ftp/gdrs_temp/update\us_mn_state_mda\util_ethanol_plant_locations\fgdb\util_ethanol_plant_locations.gdb\ethanol_plants /var/ftp/gdrs_temp/update\us_mn_state_mda\util_ethanol_plant_locations\shp ethanol_plants.shp # "ID "ID" true true false 2 Short 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_mda\util_ethanol_plant_locations\fgdb\util_ethanol_plant_locations.gdb\ethanol_plants,ID,-1,-1;PLANTNAME "PLANTNAME" true true false 128 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_mda\util_ethanol_plant_locations\fgdb\util_ethanol_plant_locations.gdb\ethanol_plants,PLANTNAME,-1,-1;STREET "STREET" true true false 64 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_mda\util_ethanol_plant_locations\fgdb\util_ethanol_plant_locations.gdb\ethanol_plants,STREET,-1,-1;CITY "CITY" true true false 64 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_mda\util_ethanol_plant_locations\fgdb\util_ethanol_plant_locations.gdb\ethanol_plants,CITY,-1,-1;STATE "STATE" true true false 2 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_mda\util_ethanol_plant_locations\fgdb\util_ethanol_plant_locations.gdb\ethanol_plants,STATE,-1,-1;ZIP "ZIP" true true false 8 Double 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_mda\util_ethanol_plant_locations\fgdb\util_ethanol_plant_locations.gdb\ethanol_plants,ZIP,-1,-1;MGAL_YR "MGAL_YR" true true false 8 Double 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_mda\util_ethanol_plant_locations\fgdb\util_ethanol_plant_locations.gdb\ethanol_plants,MGAL_YR,-1,-1;CONFIDENCE "CONFIDENCE" true true false 2 Short 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_mda\util_ethanol_plant_locations\fgdb\util_ethanol_plant_locations.gdb\ethanol_plants,CONFIDENCE,-1,-1" #</Process>
+			</lineage>
+		</DataProperties>
+		<SyncDate>20230110</SyncDate>
+		<SyncTime>23424700</SyncTime>
+		<ModDate>20230110</ModDate>
+		<ModTime>23424700</ModTime>
+	</Esri>
+	<dataIdInfo>
+		<envirDesc Sync="TRUE">Microsoft Windows XP Professional x64 Edition Version 5.2 (Build 3790) Service Pack 2; Esri ArcGIS 10.4.1.5686</envirDesc>
+		<dataLang>
+			<languageCode value="eng" country="USA"/>
+			<countryCode value="US" Sync="TRUE"/>
+		</dataLang>
+		<idCitation>
+			<resTitle Sync="TRUE">ethanol_plants</resTitle>
+			<presForm>
+				<PresFormCd value="005"/>
+			</presForm>
+		</idCitation>
+		<descKeys>
+			<thesaName uuidref="723f6998-058e-11dc-8314-0800200c9a66"/>
+			<keyword Sync="TRUE">002</keyword>
+		</descKeys>
+		<spatRpType>
+			<SpatRepTypCd value="001"/>
+		</spatRpType>
+	</dataIdInfo>
+	<mdLang>
+		<languageCode value="eng"/>
+		<countryCode value="US" Sync="TRUE"/>
+	</mdLang>
+	<distInfo>
+		<distFormat>
+			<formatName Sync="TRUE">Shapefile</formatName>
+		</distFormat>
+		<distTranOps>
+			<transSize Sync="TRUE">0.000</transSize>
+		</distTranOps>
+	</distInfo>
+	<mdHrLv>
+		<ScopeCd value="005"/>
+	</mdHrLv>
+	<mdHrLvName Sync="TRUE">dataset</mdHrLvName>
+	<refSysInfo>
+		<RefSystem>
+			<refSysID>
+				<identCode code="26915"/>
+				<idCodeSpace Sync="TRUE">EPSG</idCodeSpace>
+				<idVersion Sync="TRUE">6.13(3.0.1)</idVersion>
+			</refSysID>
+		</RefSystem>
+	</refSysInfo>
+	<spdoinfo>
+		<ptvctinf>
+			<esriterm Name="ethanol_plants">
+				<efeatyp Sync="TRUE">Simple</efeatyp>
+				<efeageom code="1" Sync="TRUE"/>
+				<esritopo Sync="TRUE">FALSE</esritopo>
+				<efeacnt Sync="TRUE">0</efeacnt>
+				<spindex Sync="TRUE">FALSE</spindex>
+				<linrefer Sync="TRUE">FALSE</linrefer>
+			</esriterm>
+		</ptvctinf>
+	</spdoinfo>
+	<spatRepInfo>
+		<VectSpatRep>
+			<geometObjs Name="ethanol_plants">
+				<geoObjTyp>
+					<GeoObjTypCd value="004" Sync="TRUE"/>
+				</geoObjTyp>
+				<geoObjCnt Sync="TRUE">0</geoObjCnt>
+			</geometObjs>
+			<topLvl>
+				<TopoLevCd value="001" Sync="TRUE"/>
+			</topLvl>
+		</VectSpatRep>
+	</spatRepInfo>
+	<eainfo>
+		<detailed Name="ethanol_plants">
+			<enttyp>
+				<enttypl Sync="TRUE">ethanol_plants</enttypl>
+				<enttypt Sync="TRUE">Feature Class</enttypt>
+				<enttypc Sync="TRUE">0</enttypc>
+			</enttyp>
+			<attr>
+				<attrlabl Sync="TRUE">FID</attrlabl>
+				<attalias Sync="TRUE">FID</attalias>
+				<attrtype Sync="TRUE">OID</attrtype>
+				<attwidth Sync="TRUE">4</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+				<attrdef Sync="TRUE">Internal feature number.</attrdef>
+				<attrdefs Sync="TRUE">Esri</attrdefs>
+				<attrdomv>
+					<udom Sync="TRUE">Sequential unique whole numbers that are automatically generated.</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">Shape</attrlabl>
+				<attalias Sync="TRUE">Shape</attalias>
+				<attrtype Sync="TRUE">Geometry</attrtype>
+				<attwidth Sync="TRUE">0</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+				<attrdef Sync="TRUE">Feature geometry.</attrdef>
+				<attrdefs Sync="TRUE">ESRI</attrdefs>
+				<attrdomv>
+					<udom Sync="TRUE">Coordinates defining the features.</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">ID</attrlabl>
+				<attalias Sync="TRUE">ID</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">5</attwidth>
+				<atprecis Sync="TRUE">5</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PLANTNAME</attrlabl>
+				<attalias Sync="TRUE">PLANTNAME</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">128</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">STREET</attrlabl>
+				<attalias Sync="TRUE">STREET</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">64</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">CITY</attrlabl>
+				<attalias Sync="TRUE">CITY</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">64</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">STATE</attrlabl>
+				<attalias Sync="TRUE">STATE</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">2</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">ZIP</attrlabl>
+				<attalias Sync="TRUE">ZIP</attalias>
+				<attrtype Sync="TRUE">Double</attrtype>
+				<attwidth Sync="TRUE">19</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">MGAL_YR</attrlabl>
+				<attalias Sync="TRUE">MGAL_YR</attalias>
+				<attrtype Sync="TRUE">Double</attrtype>
+				<attwidth Sync="TRUE">19</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">CONFIDENCE</attrlabl>
+				<attalias Sync="TRUE">CONFIDENCE</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">5</attwidth>
+				<atprecis Sync="TRUE">5</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+		</detailed>
+	</eainfo>
+	<mdDateSt Sync="TRUE">20230110</mdDateSt>
+</metadata>
