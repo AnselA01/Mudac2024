@@ -60,7 +60,7 @@ ggplot(
 
 
 ```{r}
-data2023 <- Crops %>%
+data_big <- Crops %>%
  # filter(Year == 2023) %>%
   inner_join(Animals, by = join_by("County" == "County of County_Animals",
                                    "Year" == "Year of County_Animals")) %>%
@@ -88,7 +88,6 @@ data2023 <- Crops %>%
          `Diammonium Phosphate (DAP) (18-46-0)`,
          `Ammonia (82-0-0)`,
          `Estimated Value Per Acre`)
-
 
 
 ```
